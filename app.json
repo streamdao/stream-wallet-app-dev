@@ -1,46 +1,32 @@
 {
-    "expo": {
-        "name": "stream-wallet-app",
-        "slug": "stream-wallet-app",
-        "version": "0.1.0",
-        "orientation": "portrait",
-        "icon": "./assets/icon.png",
-        "scheme": "wallet",
-        "userInterfaceStyle": "automatic",
-        "splash": {
-            "image": "./assets/images/splash_radiant.png",
-            "resizeMode": "contain",
-            "backgroundColor": "#ffffff"
-        },
-        "updates": {
-            "fallbackToCacheTimeout": 0
-        },
-        "assetBundlePatterns": ["**/*"],
-        "ios": {
-            "backgroundColor": "#ffffff",
-            "bundleIdentifier": "com.stream.wallet",
-            "buildNumber": "0.1.0"
-        },
-        "android": {
-            "adaptiveIcon": {
-                "foregroundImage": "./assets/images/adaptive-icon.png",
-                "backgroundColor": "#ffffff"
-            },
-            "package": "com.stream-wallet",
-            "versionCode": 1
-        },
-        "web": {
-            "favicon": "./assets/images/favicon.png"
-        },
-        "plugins": ["sentry-expo"],
-        "hooks": {
-            "postPublish": [{
-                "file": "sentry-expo/upload-sourcemaps",
-                "config": {
-                    "organization": "stream-dao",
-                    "project": "react-native",
-                    "authToken": ""
-                }
-            }]
-        }
+  "expo": {
+    "name": "stream-wallet-app",
+    "slug": "stream-wallet-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
     }
+  }
+}
